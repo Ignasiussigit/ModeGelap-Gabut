@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+
+:root {
+    --white: #fff;
+    --black: #444;
+}
+
+body.dark {
+    --white: #444;
+    --black: #ffff;
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--black);
+    text-align: center;
+}
+
+#toggle-btn {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 68px;
+    top: 75%;
+    text-align: center;
+    font-size: 30px;
+}
+
+#toggle-btn.fa-moon {
+    transform: rotate(360deg);
+}
+
+.tengah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#malam {
+    display: none;
+}
